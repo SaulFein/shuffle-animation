@@ -53,14 +53,20 @@
 .redbox{
   -webkit-animation:movingboxred 1s 1;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 }
 .bluebox{
   -webkit-animation:movingboxblue 2s 1;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 }
 .greenbox{
   -webkit-animation:movingboxgreen 2s 1;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 }
 
 

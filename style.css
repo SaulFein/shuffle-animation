@@ -1,0 +1,66 @@
+.redbox{
+  width:200px;
+  height:200px;
+  background:red;
+  position:absolute;
+  top:100px;
+  left:25%;
+  margin-left:-100px;
+}
+
+.bluebox{
+  width:200px;
+  height:200px;
+  background:blue;
+  position:absolute;
+  top:100px;
+  left:75%;
+  margin-left:-100px;
+}
+
+.greenbox{
+  width:200px;
+  height:200px;
+  background: green;
+  position:absolute;
+  top:100px;
+  left:50%;
+  margin-left:-100px;
+}
+
+@-webkit-keyframes movingboxred{
+  0%{left:25%; top: 100px;}
+  50%{top: 300px;}
+  100%{left:50%; top: 100px;}
+}
+
+@-webkit-keyframes movingboxblue{
+  0%{left:75%; top: 100px;}
+  17%{top: 300px;}
+  50%{left: 50%; top: 100px;}
+  75%{left: 34%; top: 300px;}
+  100%{left:25%; top: 100px;}
+}
+
+@-webkit-keyframes movingboxgreen{
+  0%{left:50%; top: 100px;}
+  17%{left: 34%; top: 300px;}
+  50%{left:25%; top: 100px;}
+  75%{left: 50%; top: 300px;}
+  100%{left:75%; top: 100px;}
+}
+
+.redbox{
+  -webkit-animation:movingboxred 1s 1;
+  -webkit-animation-fill-mode: forwards;
+}
+.bluebox{
+  -webkit-animation:movingboxblue 2s 1;
+  -webkit-animation-fill-mode: forwards;
+}
+.greenbox{
+  -webkit-animation:movingboxgreen 2s 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+

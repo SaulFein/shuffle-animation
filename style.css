@@ -2,6 +2,8 @@
   width:200px;
   height:200px;
   background:red;
+  color:black;
+  text-align: center;
   position:absolute;
   top:100px;
   left:25%;
@@ -12,6 +14,8 @@
   width:200px;
   height:200px;
   background:blue;
+  color:black;
+  text-align: center;
   position:absolute;
   top:100px;
   left:75%;
@@ -22,45 +26,66 @@
   width:200px;
   height:200px;
   background: green;
+  color:black;
+  text-align: center;
   position:absolute;
   top:100px;
   left:50%;
   margin-left:-100px;
 }
 
+.redbox:hover {
+  color: red;
+}
+
+.bluebox:hover {
+  color: blue;
+}
+
+.greenbox:hover {
+  color: green;
+}
+
+
 @-webkit-keyframes movingboxred{
-  0%{left:25%; top: 100px;}
-  50%{top: 300px;}
-  100%{left:50%; top: 100px;}
+  0%{left:25%; top: 100px; background-color: black;}
+  50%{top: 25px;background-color: black;}
+  100%{left:50%; top: 100px;background-color: black;}
 }
 
 @-webkit-keyframes movingboxblue{
-  0%{left:75%; top: 100px;}
-  17%{top: 300px;}
-  50%{left: 50%; top: 100px;}
-  75%{left: 34%; top: 300px;}
-  100%{left:25%; top: 100px;}
+  0%{left:75%; top: 100px; background-color: black;}
+  17%{top: 25px;background-color: black;}
+  50%{left: 50%; top: 100px;background-color: black;}
+  75%{left: 34%; top: 300px;background-color: black;}
+  100%{left:25%; top: 100px;background-color: black;}
 }
 
 @-webkit-keyframes movingboxgreen{
-  0%{left:50%; top: 100px;}
-  17%{left: 34%; top: 300px;}
-  50%{left:25%; top: 100px;}
-  75%{left: 50%; top: 300px;}
-  100%{left:75%; top: 100px;}
+  0%{left:50%; top: 100px; background-color: black;}
+  17%{left: 34%; top: 300px; background-color: black;}
+  50%{left:25%; top: 100px;background-color: black;}
+  75%{left: 50%; top: 25px;background-color: black;}
+  100%{left:75%; top: 100px;background-color: black;}
 }
 
 .redbox{
   -webkit-animation:movingboxred 1s 1;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 }
 .bluebox{
   -webkit-animation:movingboxblue 2s 1;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 }
 .greenbox{
   -webkit-animation:movingboxgreen 2s 1;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 }
 
 
